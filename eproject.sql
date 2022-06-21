@@ -22,7 +22,7 @@ CREATE TABLE if NOT EXISTS `product`(
 	`CID` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	`product_code` VARCHAR(255) NOT NULL,
 	`fabric` VARCHAR(255) NOT NULL,
-	`price` FLOAT NOT NULL,
+	`price` varchar(30) NOT NULL,
 	`size` FLOAT NOT NULL,
 	`urlimg` VARCHAR(255) NOT NULL,
 	`CollectionID` INT  NOT NULL,
