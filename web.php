@@ -89,5 +89,30 @@ Route::group(['prefix' => 'adminrepos'], function () {
         'as' => 'admin.show_admin'
     ]);
 
+    Route::get('delete/{ID}', [
+        'uses' => 'AdminControllerWithRepos@confirm_products',
+        'as' => 'admin.confirm_products'
+    ]);
+
+    Route::get('delete/{ID}', [
+        'uses' => 'AdminControllerWithRepos@confirm_collection',
+        'as' => 'admin.confirm_collection'
+    ]);
+
+    Route::get('delete/{ID}', [
+        'uses' => 'AdminControllerWithRepos@confirm_customers',
+        'as' => 'admin.confirm_customers'
+    ]);
+
+    Route::get('delete/{ID}', [
+        'uses' => 'AdminControllerWithRepos@confirm_stylist',
+        'as' => 'admin.confirm_stylist'
+    ]);
+
+    Route::post('delete/{ID}',[
+        'uses' => 'AdminControllerWithRepos@destroy',
+        'as' => 'admin.destroy'
+    ]);
+
 });
 
