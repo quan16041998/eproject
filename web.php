@@ -155,6 +155,32 @@ Route::group(['prefix' => 'stylistrepos'], function () {
         'uses' => 'StylistControllerWithRepos@destroy',
         'as' => 'stylist.destroy'
     ]);
+    
+    
+    Route::group(['prefix' => 'AdminRepos '], function () {
+    Route::get('', [
+        'uses' => 'AdminControllerWithRepos@index',
+        'as' => 'admin.index_customer'
+    ]);
+
+    Route::get('show/{ID}',[
+        'uses' => 'AdminControllerWithRepos@show',
+        'as' => 'admin.show_customer'
+    ]);
+
+    Route::get('update/{ID}',[
+        'uses' => 'AdminControllerWithRepos@edit',
+        'as' => 'admin.edit_customer'
+    ]);
+
+    Route::post('update/{ID}',[
+        'uses' => 'AdminControllerWithRepos@update',
+        'as' => 'admin.update_customer'
+    ]);
+});
 
 });
+    
+    
+    
 
