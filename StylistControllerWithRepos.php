@@ -99,7 +99,7 @@ class StylistControllerWithRepos extends Controller
     public function confirm($SID){
         $stylist = StylistRepos::getstylistById($SID);
 
-        return view('stylist.Stylistconfirm',
+        return view('stylist.Stylistdelete',
             [
                 'stylist' => $stylist[0],
             ]
