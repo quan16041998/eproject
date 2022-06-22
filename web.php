@@ -113,6 +113,43 @@ Route::group(['prefix' => 'adminrepos'], function () {
         'uses' => 'AdminControllerWithRepos@destroy',
         'as' => 'admin.destroy'
     ]);
+    
+    
+    Route::group(['prefix' => 'stylistrepos'], function () {
+    Route::get('', [
+        'uses' => 'StylistControllerWithRepos@index',
+        'as' => 'stylist.index'
+    ]);
+
+    Route::get('create',[
+        'uses' => 'StylistControllerWithRepos@create',
+        'as' => 'stylist.create'
+    ]);
+
+    Route::post('create',[
+        'uses' => 'StylistControllerWithRepos@store',
+        'as' => 'stylist.store'
+    ]);
+
+    Route::get('update/{id}',[
+        'uses' => 'StylistControllerWithRepos@edit',
+        'as' => 'stylist.edit'
+    ]);
+
+    Route::post('update/{id}',[
+        'uses' => 'StylistControllerWithRepos@update',
+        'as' => 'stylist.update'
+    ]);
+
+    Route::get('delete/{id}', [
+        'uses' => 'StylistControllerWithRepos@confirm',
+        'as' => 'stylist.confirm'
+    ]);
+
+    Route::post('delete/{id}',[
+        'uses' => 'StylistControllerWithRepos@destroy',
+        'as' => 'stylist.destroy'
+    ]);
 
 });
 
