@@ -115,7 +115,7 @@ Route::group(['prefix' => 'adminrepos'], function () {
     ]);
     
     
-    Route::group(['prefix' => 'stylistrepos'], function () {
+Route::group(['prefix' => 'stylistrepos'], function () {
     Route::get('', [
         'uses' => 'StylistControllerWithRepos@index',
         'as' => 'stylist.index'
