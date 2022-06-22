@@ -121,6 +121,11 @@ Route::group(['prefix' => 'stylistrepos'], function () {
         'as' => 'stylist.index'
     ]);
 
+    Route::get('show/{SID}',[
+        'uses' => 'StylistControllerWithRepos@show',
+        'as' => 'stylist.show'
+    ]);
+    
     Route::get('create',[
         'uses' => 'StylistControllerWithRepos@create',
         'as' => 'stylist.create'
