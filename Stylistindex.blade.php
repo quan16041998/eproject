@@ -16,6 +16,7 @@
         <th scope="col">urlimg</th>
         <th scope="col">&nbsp;</th>
         <th scope="col">&nbsp;</th>
+        <th scope="col">&nbsp;</th>
       </tr>
       </thead>
       <tbody>
