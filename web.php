@@ -131,22 +131,22 @@ Route::group(['prefix' => 'stylistrepos'], function () {
         'as' => 'stylist.store'
     ]);
 
-    Route::get('update/{id}',[
+    Route::get('update/{SID}',[
         'uses' => 'StylistControllerWithRepos@edit',
         'as' => 'stylist.edit'
     ]);
 
-    Route::post('update/{id}',[
+    Route::post('update/{SID}',[
         'uses' => 'StylistControllerWithRepos@update',
         'as' => 'stylist.update'
     ]);
 
-    Route::get('delete/{id}', [
+    Route::get('delete/{SID}', [
         'uses' => 'StylistControllerWithRepos@confirm',
         'as' => 'stylist.confirm'
     ]);
 
-    Route::post('delete/{id}',[
+    Route::post('delete/{SID}',[
         'uses' => 'StylistControllerWithRepos@destroy',
         'as' => 'stylist.destroy'
     ]);
