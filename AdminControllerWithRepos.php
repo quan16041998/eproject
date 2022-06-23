@@ -3,15 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Repository\AdminRepos;
-use Dotenv\Validator;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
-class AdminControllerWithRepos extends Controller
+class   AdminControllerWithRepos extends Controller
 {
     public function index()
     {
         $admin = AdminRepos::getAllAdmin();
-        return view('admin.index',
+        return view('admin.adminIndex',
             [
                 'admin' => $admin
             ]);
@@ -20,14 +20,14 @@ class AdminControllerWithRepos extends Controller
     public function show($username)
     {
         $admin = AdminRepos::getAdminByUsername($username);
-        return view('admin.show', [
+        return view('admin.adminShow', [
             'admin' => $admin[0]
         ]);
     }
 
     public function edit($username)
     {
-        $username = AdminRepos::getClassByUsername($username); //this is always an array
+        $username = AdminRepos::getAdminByUsername($username); //this is always an array
 
 
         return view(
