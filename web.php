@@ -125,23 +125,23 @@ Route::group(['prefix' => 'stylistrepos'], function () {
     
 Route::group(['prefix' => 'CustomerRepos '], function () {
     Route::get('', [
-        'uses' => 'AdminControllerWithRepos@indexcustomer',
-        'as' => 'Admin.index_customer'
+        'uses' => 'CustomerControllerWithRepos@indexcustomer',
+        'as' => 'Customer.index_customer'
     ]);
 
     Route::get('show/{ID}',[
-        'uses' => 'AdminControllerWithRepos@showcustomer',
-        'as' => 'Admin.show_customer'
+        'uses' => 'CustomerControllerWithRepos@showcustomer',
+        'as' => 'Customer.show_customer'
     ]);
 
     Route::get('update/{ID}',[
-        'uses' => 'AdminControllerWithRepos@editcustomer',
-        'as' => 'Admin.edit_customer'
+        'uses' => 'CustomerControllerWithRepos@editcustomer',
+        'as' => 'Customer.edit_customer'
     ]);
 
     Route::post('update/{ID}',[
-        'uses' => 'AdminControllerWithRepos@updatecustomer',
-        'as' => 'Admin.update_customer'
+        'uses' => 'CustomerControllerWithRepos@updatecustomer',
+        'as' => 'Customer.update_customer'
     ]);
 
 });
