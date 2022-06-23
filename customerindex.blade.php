@@ -21,9 +21,9 @@
           <td>{{$a->name}}</td>
           <td>{{$a->dob}}</td>
           <td><a type="button" class="btn btn-primary btn-sm"
-                 href="{{route('Admin.show_customer',['ID' => $a->ID])}}">Details</a></td>
+                 href="{{route('Customer.show_customer',['ID' => $a->ID])}}">Details</a></td>
           <td><a type="button" class="btn btn-success btn-sm"
-                 href="{{route('Admin.edit_customer',['ID' => $a->ID])}}">Edit</a></td>
+                 href="{{route('Customer.edit_customer',['ID' => $a->ID])}}">Edit</a></td>
         </tr>
       @endforeach
       </tbody>
