@@ -65,7 +65,7 @@ VALUES
 ('MD_QA14', 'wool', 2200, 29, 'images/product/00014-burberry-fall-2022-menswear-credit-brand', 1,1),
 ('MD_QA15', 'cashmere', 2000, 30, 'images/product/00015-burberry-fall-2022-menswear-credit-brand', 1,1),
 ('MD_QA16', 'cashmere', 2000, 30, 'images/product/00016-burberry-fall-2022-menswear-credit-brand', 1,1),
-('MD_QA17', 'kaki', 2100, 29, 'images/product/00017-burberry-fall-2022-menswear-credit-brand', 1,1)
+('MD_QA17', 'kaki', 2100, 29, 'images/product/00017-burberry-fall-2022-menswear-credit-brand', 1,1),
 ('MD_QA18', 'cotton', 1850, 27, 'images/product/00018-burberry-fall-2022-menswear-credit-brand', 1,1),
 ('MD_QA19', 'cashmere', 2000, 27, 'images/product/00019-burberry-fall-2022-menswear-credit-brand', 1,1),
 ('MD_QA20', 'cashmere', 1720, 28, 'images/product/00020-burberry-fall-2022-menswear-credit-brand', 1,1),
@@ -152,3 +152,33 @@ VALUES
 ('PK_DH07', 'Platinum', 258076, 34, 'images/product/patek-6102p-001', 3,1),
 ('PK_DH08', 'Titanim and rose gold', 51000, 34, 'images/product/Pilot Type 20 Tourbillon', 3,1),
 ('PK_DH09', 'Sapphire', 104133, 34, 'images/product/TAKASHI MURAKAMI SAPPHIRE RAINBOW', 3,1);
+
+
+
+
+
+INSERT into `admin` (`username`,`password`,`name`,`dob`,`contact`,`email`)
+VALUES ('admin','1234','quan','1998-04-16','0898288386','quan16041998@gmail.com');
+
+
+USE 1808g;
+INSERT into `customer` (`name`,`dob`,`contact`,`email`,`address`)
+VALUES ('quan','1998-04-16','0898288386','quan16041998@gmail.com','Ha Noi');
+
+INSERT INTO `stylist`(`name`,`dob`,`contact`,`email`,`history`,`urlimg`)
+VALUES ('Dinh Tien Quan','1998-04-16','0898288386','quan16041998@gmail.com','Considered by the Hollywood Reporter as one of Hollywood 25 most influential stylists, Dinh Tien Quan describes his styling as "fresh and innovative." He dresses celebrities such as John Boyega, Michael B. Jordan, Odell Beckham Jr., Gucci Mane, and Lil Baby. Rembert also styles women, including pop stars of the caliber of Lizzo and Rita Ora.
+', 'images/stylist/anh02.jpg'),
+('Do Khac Duong','2003-2-28','0898888888','duongdokhac@gmail.com','A stylist who collaborates with practically all the Hollywood elite, I Duong Do works with many actors on the big screen and does not miss big red carpet events such as the Oscars. Among his clients are Bradley Cooper, Rami Malek, Dwayne Johnson, Ryan Reynolds, Chris Evans, John Kravinsky, and Milo Ventimiglia. He recently added singer Charlie Puth, who appears on the stylist social media in Isabel Marant, to the list. Under his direction, Adrien Brody wore Dior at the 2021 Cannes Film Festival.','images/stylist/anh03.jpg'),
+('Bui Anh Tuan', '2003-03-03','0123456789','tuanxiaomi@gmail.com','
+Manager of emerging talents and producer of film and TV projects, Tuan Bui proves to have a multifaceted soul and not just that of the classic stylist. Among his clientele, he can boast established actors such as Iron Man star Robert Downey Jr., Keanu Reeves, and 50 Shades of Gray star Jamie Dornan, as well as emerging actors like Jason Momoa of Game of Thrones and Regé-Jean Page, the sex symbol from Netflix Bridgerton.
+
+
+','images/stylist/anh03.jfif');
+
+
+
+INSERT INTO `collection`(`name`,`stylist`,`urlimg`,`introduce`)
+VALUES ('Winter 2022','Dinh Tien Quan','images/collection/00001-burberry-fall-2022-menswear-credit-brand.webp','Chaos—the distintegration of norms and boundaries, social and fashion-wise—has reveberated through the ways shows have been done and undone this season. Riccardo Tisci served up his own multi-messaging version of it for Burberry in London—a massive real-life event held at London’s Central Hall Westminster. That is, right across from the Houses of Parliament, a seat of European democracy where, to quote Shakespeare'),
+			('Sumer 2022','Do Khac Duong', 'images/collection/00001-DOLCE-GABBANA-MENSWEAR-SPRING-21.webp','What the soon-to-be doctors diagnosed in Dolce & Gabbana this evening is unknown, but from my very spacious bench—“They’ll never be able to squeeze us together like sardines again!” observed my neighbor from a meter away—it looked liked like a serious case of creative development. In their preshow briefing (also spacious) the designers said they had worked with the owners of the Parco dei Principi hotel in Sorrento to infuse elements of Gio Ponti’s architectural wonder into their collection. There were plenty of straightforwardly cosmetic connections made; the beautiful blue tiling patterns in the hotel were handsome additions to silk sarongs, a rib-knit “wetsuit” (modeled with a hilariously small surfboard), dressing gowns, pants, and shirting. More complex was its reproduction in fully proportioned knit sweaters, or different-wash patchwork on jeans.'),
+			('Accessory collection', 'Bui Anh Tuan', 'images/collection/anh01.jfif','masterpiece of creation') 
+
