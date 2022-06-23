@@ -89,3 +89,50 @@ VALUES
 ('MD_QA38', 'wool', 2222, 27, 'images/product/00038-burberry-fall-2022-menswear-credit-brand', 1,1),
 ('MD_QA39', 'leather', 1900, 28, 'images/product/00039-burberry-fall-2022-menswear-credit-brand', 1,1),
 ('MD_QA40', 'leather', 2000, 29, 'images/product/00040-burberry-fall-2022-menswear-credit-brand', 1,1);
+
+
+
+
+
+INSERT INTO product(product_code, fabric, price, size, urlimg, CollectionID, SID)
+VALUES 
+('MH_QA01', 'cotton', 2500, 28, 'images/products/00001-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA02', 'cotton', 2500, 29, 'images/products/00002-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA03', 'cotton', 2300, 28, 'images/products/00003-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA04', 'cotton', 2200, 29, 'images/products/00004-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA05', 'cotton', 2000, 30, 'images/products/00005-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA06', 'cotton', 2100, 28, 'images/products/00006-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA07', 'cotton', 1900, 27, 'images/products/00007-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA08', 'cotton', 2500, 30, 'images/products/00008-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA09', 'cotton', 1800, 28, 'images/products/00009-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA10', 'cotton', 2500, 30, 'images/products/00010-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA11', 'cotton', 2300, 29, 'images/products/00011-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA12', 'cotton', 2500, 28, 'images/products/00012-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA13', 'cotton', 1800, 28, 'images/products/00013-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA14', 'cotton', 2500, 30, 'images/products/00014-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA15', 'cotton', 1900, 29, 'images/products/00015-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA16', 'cotton', 2500, 28, 'images/products/00016-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA17', 'cotton', 2100, 27, 'images/products/00017-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA18', 'cotton', 2200, 28, 'images/products/00018-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA19', 'cotton', 2500, 30, 'images/products/00019-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA20', 'cotton', 2700, 28, 'images/products/00020-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA21', 'cotton', 2500, 29, 'images/products/00021-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA22', 'cotton', 2300, 28, 'images/products/00022-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA23', 'cotton', 2200, 27, 'images/products/00023-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA24', 'cotton', 2400, 28, 'images/products/00024-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA25', 'cotton', 2500, 28, 'images/products/00025-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA26', 'cotton', 2400, 29, 'images/products/00026-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA27', 'cotton', 2300, 28, 'images/products/00027-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA28', 'cotton', 2100, 28, 'images/products/00028-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA29', 'cotton', 2500, 30, 'images/products/00029-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA30', 'cotton', 2100, 28, 'images/products/00030-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA31', 'cotton', 2500, 28, 'images/products/00031-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA32', 'cotton', 2700, 29, 'images/products/00032-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA33', 'cotton', 2500, 28, 'images/products/00033-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA34', 'cotton', 1900, 27, 'images/products/00034-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA35', 'cotton', 2000, 29, 'images/products/00035-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA36', 'cotton', 2300, 28, 'images/products/00036-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA37', 'cotton', 2500, 26, 'images/products/00037-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA38', 'silk', 1900, 30, 'images/products/00038-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA39', 'cotton', 2300, 28, 'images/products/00039-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
+('MH_QA40', 'cotton', 2100, 27, 'images/products/00040-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2);
