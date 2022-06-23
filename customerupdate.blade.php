@@ -6,7 +6,7 @@
 
     @include('partials.ErrorsAll')
 
-    <form action="{{route('Admin.update_customer', ['ID' => old('ID')?? $customer->ID])}}" method="post">
+    <form action="{{route('Customer.update_customer', ['ID' => old('ID')?? $customer->ID])}}" method="post">
       @csrf
       @include('customer.customerFields')
 
