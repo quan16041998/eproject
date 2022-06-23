@@ -4,7 +4,7 @@
   <div class="container">
     <h1 class="display-4">Update An Existing Stylist</h1>
 
-    @include('partials.ErrorsStylist')
+    @include('partials.ErrorsAll')
 
     <form action="{{route('stylist.update', ['SID' => old('SID')?? $stylist->SID])}}" method="post">
       @csrf
