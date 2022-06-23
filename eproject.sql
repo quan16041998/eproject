@@ -136,3 +136,19 @@ VALUES
 ('MH_QA38', 'silk', 1900, 30, 'images/products/00038-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
 ('MH_QA39', 'cotton', 2300, 28, 'images/products/00039-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2),
 ('MH_QA40', 'cotton', 2100, 27, 'images/products/00040-DOLCE-GABBANA-MENSWEAR-SPRING-21', 2,2);
+
+
+
+//ĐỒNG HỒ
+
+INSERT INTO product(product_code, fabric, price, size, urlimg, CollectionID, SID)
+VALUES 
+('PK_DH01', 'Rose gold. Sapphire crystal case back.', 15000, 34, 'images/products/6002R_001_1', 3,1),
+('PK_DH02', 'Rose gold. Sapphire crystal case back.', 15000, 34, 'images/products/5304R_001_1', 3,1),
+('PK_DH03', 'White gold, the Cyclops lens and the five-piece link Jubilee bracelet.', 20000, 34, 'images/products/Datejust 31 278289RBR', 3,1),
+('PK_DH04', 'White Gold Set With Diamonds', 490000, 34, 'image/products/GMT-Master II Ice 116769TBR', 3,1),
+('PK_DH05', 'Sapphire and gold',  990000, 34, 'images/product/Richard Mille RM 57-03 Tourbillon Sapphire Dragon', 3,1),
+('PK_DH06', 'White Gold', 774228, 34, 'images/product/ Richard Mille RM 51-01 Tourbillon Tiger And Dragon', 3,1),
+('PK_DH07', 'Platinum', 258076, 34, 'images/product/patek-6102p-001', 3,1),
+('PK_DH08', 'Titanim and rose gold', 51000, 34, 'images/product/Pilot Type 20 Tourbillon', 3,1),
+('PK_DH09', 'Sapphire', 104133, 34, 'images/product/TAKASHI MURAKAMI SAPPHIRE RAINBOW', 3,1);
